@@ -1,7 +1,7 @@
-import app from './app'; 
-import { AppDataSource } from './data-source';
+import app from './src/app'
+import {AppDataSource} from "./src/data-source";
 
-const PORT = process.env.PORT ? parseInt(process.env.PORT) : 3001;
+const PORT = process.env.PORT || 3001;
 
 AppDataSource.initialize()
     .then(() => {
